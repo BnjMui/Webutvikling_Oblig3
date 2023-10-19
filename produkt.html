@@ -11,94 +11,120 @@
         <title>Produkt</title>
     </head>
     <body>
-        <header>
-            <nav>
+        <div id="grid-container">
+            <header id="header">
+                <nav>
+                    <ul>
+                        <li class="leftnav"><button type="button" onclick="openClose()"><i class="fa-solid fa-bars"></i></button></li> <!--https://fontawesome.com/icons/bars?f=classic&s=solid-->
+                        <li class="leftnav"><button type="button" onclick="openCloseS(`flex`)"><i class="fa-solid fa-magnifying-glass"></i></button></li> <!--https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid-->
+                        <li class="logo"><a href="index.html">Logo</a></li>
+                        <li class="rightnav"><button type="button"><i class="fa-regular fa-user"></i></button></li> <!--https://fontawesome.com/icons/user?f=classic&s=regular-->
+                        <li class="rightnav"><button type="button"><i class="fa-solid fa-cart-shopping"></i></button></li> <!--https://fontawesome.com/icons/cart-shopping?f=classic&s=solid-->
+                    </ul>
+                    <span id="searchbar">
+                    <button type="button" onclick="openCloseS(`none`)">X</button>
+                    <input type="search" name="searchinput" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+    
+                    <ul id="topnavcat">
+                        <li><a href="katalog.html">Men</a></li>
+                        <li><a href="katalog.html">Women</a></li>
+                        <li><a href="katalog.html">Kids</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="main">
+                <section>
+                    <img src="###" alt="product_showcase">
+                    <h2>product name</h2>
+                    <p>0.00kr</p>
+                    <p>Choose colour: </p>
+                    <ul>
+                        <li><input type="color"></li>
+                        <li><input type="color"></li>
+                        <li><input type="color"></li>
+                        <li><input type="color"></li>
+                        <li><input type="color"></li>
+                    </ul>
+                    <label for="size">Size: </label>
+                    <select id="size">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                    </select>
+                    <p>This is a product about paragraf, the product is and will be product, and therefore it is product. This is why our product will always be product, and nice product for product out in product.</p>
+                    <button type="button">Add to cart</button>
+                </section>
+                <section>
+                    <h2>Similar products</h2>
+                    <a href="produkt.html">
+                        <figure>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                        </figure>
+                    </a>
+                    <a href="produkt.html">
+                        <figure>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                        </figure>
+                    </a>
+                    <a href="produkt.html">
+                        <figure>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                        </figure>
+                    </a>
+                    <a href="produkt.html">
+                        <figure>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                        </figure>
+                    </a>
+                </section>
+            </main>
+            <footer id="footer">
                 <span class="logo">
                     <a href="index.html">Logo</a>
                 </span>
-                <ul>
-                    <li><button type="button"><i class="fa-solid fa-bars"></i></button></li> <!--https://fontawesome.com/icons/bars?f=classic&s=solid-->
-                    <li><button type="button"><i class="fa-solid fa-magnifying-glass"></i></button></li> <!--https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid-->
-                    <li><button type="button"><i class="fa-regular fa-user"></i></button></li> <!--https://fontawesome.com/icons/user?f=classic&s=regular-->
-                    <li><button type="button"><i class="fa-solid fa-cart-shopping"></i></button></li> <!--https://fontawesome.com/icons/cart-shopping?f=classic&s=solid-->
-                </ul>
-            </nav>
-        </header>
-        <main id="main">
-            <section>
-                <img src="###" alt="product_showcase">
-                <h2>product name</h2>
-                <p>0.00kr</p>
-                <p>Choose colour: </p>
-                <ul>
-                    <li><input type="color"></li>
-                    <li><input type="color"></li>
-                    <li><input type="color"></li>
-                    <li><input type="color"></li>
-                    <li><input type="color"></li>
-                </ul>
-                <label for="size">Size: </label>
-                <select id="size">
-                    <option>38</option>
-                    <option>39</option>
-                    <option>40</option>
-                    <option>41</option>
-                    <option>42</option>
-                    <option>43</option>
-                </select>
-                <p>This is a product about paragraf, the product is and will be product, and therefore it is product. This is why our product will always be product, and nice product for product out in product.</p>
-                <button type="button">Add to cart</button>
-            </section>
-            <section>
-                <h2>Similar products</h2>
-                <a href="produkt.html">
-                    <figure>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                    </figure>
-                </a>
-                <a href="produkt.html">
-                    <figure>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                    </figure>
-                </a>
-                <a href="produkt.html">
-                    <figure>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                    </figure>
-                </a>
-                <a href="produkt.html">
-                    <figure>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                    </figure>
-                </a>
-            </section>
-        </main>
-        <footer id="footer">
-            <span class="logo">
-                <a href="index.html">Logo</a>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Katalog.html">Catalog</a></li>
-                    <li><a href="produkt.html">Product</a></li>
-                </ul>
-            </nav>
-            <section>
-            <h2>Contact us</h2>
-            <p>Mail: <a href="mailto:jonasae@hiof.no">jonasae@hiof.no</a></p>
-            <p>Phone: <a href="+4748202215">+47 482 02 215</a></p>
-            </section>
-            <span>Copyright: Jonas A. Evensen 2023</span>
-        </footer>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Katalog.html">Catalog</a></li>
+                        <li><a href="produkt.html">Product</a></li>
+                    </ul>
+                </nav>
+                <section>
+                <h2>Contact us</h2>
+                <p>Mail: <a href="mailto:jonasae@hiof.no">jonasae@hiof.no</a></p>
+                <p>Phone: <a href="+4748202215">+47 482 02 215</a></p>
+                </section>
+                <span>Copyright: Jonas A. Evensen 2023</span>
+            </footer>
+        </div>
+        <script>
+            const topNavMenu = document.getElementById("topnavcat")
+            const openClose = ()=>{
+                    if(topNavMenu.style.display == `flex`){
+                        topNavMenu.style.display = `none`
+                    }
+                    else{
+                        topNavMenu.style.display = `flex`
+                    }
+                }
+            
+                const openCloseS = (value)=>{
+                    document.getElementById("searchbar").style.display = value
+                }
+        </script>
     </body>
     
 </html>

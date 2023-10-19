@@ -4,7 +4,7 @@
 body{
     background-color: #fefefe;
     font-family: Arial, Helvetica, sans-serif;
-    
+    /*Grid*/
 }
 #grid-container{
     width: 100%;
@@ -12,7 +12,6 @@ body{
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer";
     row-gap: 1rem;
-    
 }
 #header{
     grid-area: header;
@@ -23,16 +22,24 @@ body{
 #footer{
     grid-area: footer;
 }
+/*Flex*/
 header nav{
     display: flex;
-    
+    flex-wrap: wrap;
 }
 .logo a{
-    display: inline-block;
     color: black;
     font-size: 2.5rem;
     font-weight: 800;
     text-transform: uppercase;
+}
+header button{
+    border: 0;
+    background-color: #fefefe;
+}
+i{
+    font-size: 2rem;
+    font-weight: 1;
 }
 #topnavcat{
     display: none;
@@ -42,9 +49,13 @@ header nav{
     display: none;
 }
 header nav ul{
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
 }
 header nav ul li{
     display: inline-block;
@@ -55,7 +66,8 @@ nav a{
 }
 
 main{
-    width: 94%;
+    width: 100%;
+    justify-content: center;
 }
 main article{
     display: flex;
@@ -64,8 +76,7 @@ main article{
     margin: 0;
     border: 0.5px solid;
     border-radius: 5px;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-around;
 }
 
 

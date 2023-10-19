@@ -11,128 +11,154 @@
         <title>Katalog</title>
     </head>
     <body>
-        <header id="header">
-            <nav>
+        <div id="grid-container">
+            <header id="header">
+                <nav>
+                    <ul>
+                        <li class="leftnav"><button type="button" onclick="openClose()"><i class="fa-solid fa-bars"></i></button></li> <!--https://fontawesome.com/icons/bars?f=classic&s=solid-->
+                        <li class="leftnav"><button type="button" onclick="openCloseS(`flex`)"><i class="fa-solid fa-magnifying-glass"></i></button></li> <!--https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid-->
+                        <li class="logo"><a href="index.html">Logo</a></li>
+                        <li class="rightnav"><button type="button"><i class="fa-regular fa-user"></i></button></li> <!--https://fontawesome.com/icons/user?f=classic&s=regular-->
+                        <li class="rightnav"><button type="button"><i class="fa-solid fa-cart-shopping"></i></button></li> <!--https://fontawesome.com/icons/cart-shopping?f=classic&s=solid-->
+                    </ul>
+                    <span id="searchbar">
+                    <button type="button" onclick="openCloseS(`none`)">X</button>
+                    <input type="search" name="searchinput" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+    
+                    <ul id="topnavcat">
+                        <li><a href="katalog.html">Men</a></li>
+                        <li><a href="katalog.html">Women</a></li>
+                        <li><a href="katalog.html">Kids</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="main">
+                <section id="category">
+                    <h2>Catalog</h2>
+                    <select name="Category">
+                        <option>Category</option>
+                        <option>Men</option>
+                        <option>Women</option>
+                        <option>Kids</option>
+                    </select>
+                    <select>
+                        <option>Filter</option>
+                        <option>Type</option>
+                        <option>Size</option>
+                        <option>Colour</option>
+                    </select>
+                    <label for="sort">Sort after:</label>
+                    <select id="sort">
+                        <option>New</option>
+                        <option>Most popular</option>
+                        <option>Price: high-low</option>
+                        <option>Price: low-high</option>
+                    </select>
+                </section>
+                <section>
+                    <h2>Products</h2>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                    <article>
+                        <img src="###" alt="Product picture">
+                        <h3>Productname</h3>
+                        <p>Price</p>
+                    </article>
+                </section>
+                <section id="bottomnav">
+                    <i class="fa-solid fa-chevron-left"></i> <!--https://fontawesome.com/icons/chevron-left?f=classic&s=solid-->
+                    <p>Showing products x of x</p>
+                    <i class="fa-solid fa-chevron-right"></i> <!--<i class="fa-solid fa-chevron-right"></i>-->
+                </section>
+            </main>
+            <footer id="footer">
                 <span class="logo">
                     <a href="index.html">Logo</a>
                 </span>
-                <ul>
-                    <li><button type="button"><i class="fa-solid fa-bars"></i></button></li> <!--https://fontawesome.com/icons/bars?f=classic&s=solid-->
-                    <li><button type="button"><i class="fa-solid fa-magnifying-glass"></i></button></li> <!--https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid-->
-                    <li><button type="button"><i class="fa-regular fa-user"></i></button></li> <!--https://fontawesome.com/icons/user?f=classic&s=regular-->
-                    <li><button type="button"><i class="fa-solid fa-cart-shopping"></i></button></li> <!--https://fontawesome.com/icons/cart-shopping?f=classic&s=solid-->
-                </ul>
-            </nav>
-        </header>
-        <main id="main">
-            <section id="category">
-                <h2>Catalog</h2>
-                <select name="Category">
-                    <option>Category</option>
-                    <option>Men</option>
-                    <option>Women</option>
-                    <option>Kids</option>
-                </select>
-                <select>
-                    <option>Filter</option>
-                    <option>Type</option>
-                    <option>Size</option>
-                    <option>Colour</option>
-                </select>
-                <label for="sort">Sort after:</label>
-                <select id="sort">
-                    <option>New</option>
-                    <option>Most popular</option>
-                    <option>Price: high-low</option>
-                    <option>Price: low-high</option>
-                </select>
-            </section>
-            <section>
-                <h2>Products</h2>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-                <article>
-                    <img src="###" alt="Product picture">
-                    <h3>Productname</h3>
-                    <p>Price</p>
-                </article>
-            </section>
-            <section id="bottomnav">
-                <i class="fa-solid fa-chevron-left"></i> <!--https://fontawesome.com/icons/chevron-left?f=classic&s=solid-->
-                <p>Showing products x of x</p>
-                <i class="fa-solid fa-chevron-right"></i> <!--<i class="fa-solid fa-chevron-right"></i>-->
-            </section>
-        </main>
-        <footer id="footer">
-            <span class="logo">
-                <a href="index.html">Logo</a>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Katalog.html">Catalog</a></li>
-                    <li><a href="produkt.html">Product</a></li>
-                </ul>
-            </nav>
-            <section>
-            <h2>Contact us</h2>
-            <p>Mail: <a href="mailto:jonasae@hiof.no">jonasae@hiof.no</a></p>
-            <p>Phone: <a href="+4748202215">+47 482 02 215</a></p>
-            </section>
-            <span>Copyright: Jonas A. Evensen 2023</span>
-        </footer>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Katalog.html">Catalog</a></li>
+                        <li><a href="produkt.html">Product</a></li>
+                    </ul>
+                </nav>
+                <section>
+                <h2>Contact us</h2>
+                <p>Mail: <a href="mailto:jonasae@hiof.no">jonasae@hiof.no</a></p>
+                <p>Phone: <a href="+4748202215">+47 482 02 215</a></p>
+                </section>
+                <span>Copyright: Jonas A. Evensen 2023</span>
+            </footer>
+        </div>
+        <script>
+            const topNavMenu = document.getElementById("topnavcat")
+            const openClose = ()=>{
+                    if(topNavMenu.style.display == `flex`){
+                        topNavMenu.style.display = `none`
+                    }
+                    else{
+                        topNavMenu.style.display = `flex`
+                    }
+                }
+            
+                const openCloseS = (value)=>{
+                    document.getElementById("searchbar").style.display = value
+                }
+        </script>
     </body>
 </html>
