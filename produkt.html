@@ -16,17 +16,17 @@
                 <nav>
                     <ul>
                         <li class="leftnav"><button type="button" onclick="openClose()"><i class="fa-solid fa-bars"></i></button></li> <!--https://fontawesome.com/icons/bars?f=classic&s=solid-->
-                        <li class="leftnav"><button type="button" onclick="openCloseS(`flex`)"><i class="fa-solid fa-magnifying-glass"></i></button></li> <!--https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid-->
-                        <li class="logo"><a href="index.html">Logo</a></li>
+                        <li class="leftnav"><button type="button" onclick="openCloseS()"><i class="fa-solid fa-magnifying-glass"></i></button></li> <!--https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid-->
+                        <li class="logo"><a href="index.html"><img src="img/Logo.png" alt="Logo"></a></li>
                         <li class="rightnav"><button type="button"><i class="fa-regular fa-user"></i></button></li> <!--https://fontawesome.com/icons/user?f=classic&s=regular-->
                         <li class="rightnav"><button type="button"><i class="fa-solid fa-cart-shopping"></i></button></li> <!--https://fontawesome.com/icons/cart-shopping?f=classic&s=solid-->
                     </ul>
                     <span id="searchbar">
-                    <button type="button" onclick="openCloseS(`none`)">X</button>
-                    <input type="search" name="searchinput" placeholder="Search...">
+                    <button type="button" onclick="openCloseS()">X</button>
+                    <input type="search" id="searchtextfield" name="searchinput" placeholder="Search...">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
-    
+
                     <ul id="topnavcat">
                         <li><a href="katalog.html">Men</a></li>
                         <li><a href="katalog.html">Women</a></li>
@@ -93,7 +93,7 @@
             </main>
             <footer id="footer">
                 <span class="logo">
-                    <a href="index.html">Logo</a>
+                    <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
                 </span>
                 <nav>
                     <ul>
@@ -121,8 +121,14 @@
                     }
                 }
             
-                const openCloseS = (value)=>{
-                    document.getElementById("searchbar").style.display = value
+                const searchbar = document.getElementById("searchbar")
+                const openCloseS = ()=>{
+                    if(searchbar.style.display == `flex`){
+                        searchbar.style.display = `none`
+                    }
+                    else{
+                        searchbar.style.display = `flex`
+                    }
                 }
         </script>
     </body>
