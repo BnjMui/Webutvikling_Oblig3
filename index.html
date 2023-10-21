@@ -23,7 +23,7 @@
                     </ul>
                     <span id="searchbar">
                     <button type="button" onclick="openCloseS(`none`)">X</button>
-                    <input type="search" name="searchinput" placeholder="Search...">
+                    <input type="search" id="searchtextfield" name="searchinput" placeholder="Search...">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
 
@@ -113,9 +113,14 @@
                         topNavMenu.style.display = `flex`
                     }
                 }
-            
-                const openCloseS = (value)=>{
-                    document.getElementById("searchbar").style.display = value
+                const searchbar = document.getElementById("searchbar")
+                const openCloseS = ()=>{
+                    if(searchbar.style.display == `flex`){
+                        searchbar.style.display = `none`
+                    }
+                    else{
+                        searchbar.style.display = `flex`
+                    }
                 }
         </script>
     </body>

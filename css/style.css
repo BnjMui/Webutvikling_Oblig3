@@ -38,15 +38,43 @@ header button{
     background-color: #fefefe;
 }
 i{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 1;
 }
+/*Dropdownmeny i mobilversjon*/
 #topnavcat{
     display: none;
+    background-color: #d4d4d4;
     list-style: none;
+    flex-direction: column;
+    font-size: 2.3rem;
 }
+
+/*Searchbar i mobilversjon*/
 #searchbar{
     display: none;
+    align-items: center;
+    border: 0.5px solid;
+    border-radius: 5px;
+    width: 100%;
+}
+#searchbar button{
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0 0 0 0.5rem;
+    justify-self: start;
+}
+#searchbar input{
+    display: inline-block;
+    width: 15rem;
+    height: 1.8rem;
+    margin: auto 0.5rem;
+}
+#searchbar i{
+    display: inline-block;
+    font-size: 1.83rem;
+    align-self: center;
+    padding: 0.3rem;
 }
 header nav ul{
     display: flex;
