@@ -102,38 +102,75 @@ main{
     width: 100%;
     justify-content: center;
 }
-main article{
+.article{
+    margin: 1rem auto;
+}
+.article article{
     display: flex;
     flex-wrap: wrap;
-    padding: .5rem;
+    padding: 0.8rem 0.3rem 0rem 0.3rem;
     margin: 0;
-    border: 0.5px solid;
     border-radius: 5px;
     justify-content: space-around;
 }
-main article img{
+.article img{
     width: 45%;
     height: auto;
 }
-main a{
+.article a{
     color: black;
     text-decoration: none;
 }
-main a h2{
+.article h2{
     font-weight: 750;
     font-size: 2.9rem;
     margin: 1rem;
 }
-main article p{
+.article p{
     font-size: 1.5rem;
     margin: 0.7rem;
 }
 #article1{
     border: 0;
     background-color: #C6AA81;
-
+    border: 0px;
+}
+.productslider{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.5px solid;
+    border-radius: 5px;
+    margin: 1rem auto;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.productslider article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.productslider h2{
+    display: block;
+    font-size: 2.5rem;
+}
+.productslider img{
+    display: inline-block;
+    width: 35%;
+}
+.productslider a{
+    color: black;
+    text-decoration: none;
+}
+.productslider h3{
+    display: inline-block
+}
+.productslider p{
+    display: inline-block;
 }
 
+#article2{
+    border: 0.5px solid;
+}
 /*
 .logo a{
     color: black;
