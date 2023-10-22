@@ -17,16 +17,21 @@
                     <ul>
                         <li class="navmobile"><button type="button" onclick="openClose()"><i class="fa-solid fa-bars"></i></button></li> <!--https://fontawesome.com/icons/bars?f=classic&s=solid-->
                         <li class="navmobile"><button type="button" onclick="openCloseS()"><i class="fa-solid fa-magnifying-glass"></i></button></li> <!--https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid-->
-                        <li class="logo"><a href="index.html"><img src="img/Logo.png" alt="Logo"></a></li>
-                        <li class="rightnav"><button type="button"><i class="fa-regular fa-user"></i></button></li> <!--https://fontawesome.com/icons/user?f=classic&s=regular-->
-                        <li class="rightnav"><button type="button"><i class="fa-solid fa-cart-shopping"></i></button></li> <!--https://fontawesome.com/icons/cart-shopping?f=classic&s=solid-->
+                        <li class="logo" id="logo"><a href="index.html"><img src="img/Logo.png" alt="Logo"></a></li>
+                        <li class="navmobile"><button type="button"><i class="fa-regular fa-user"></i></button></li> <!--https://fontawesome.com/icons/user?f=classic&s=regular-->
+                        <li class="navmobile"><button type="button"><i class="fa-solid fa-cart-shopping"></i></button></li> <!--https://fontawesome.com/icons/cart-shopping?f=classic&s=solid-->
+                    </ul>
+                    <ul class="desktopnav">
+                        <li><i class="fa-solid fa-phone-volume"></i></li> <!--https://fontawesome.com/icons/phone-volume?f=classic&s=solid-->
+                        <li><i class="fa-solid fa-location-dot"></i></li> <!--https://fontawesome.com/icons/location-dot?f=classic&s=solid-->
+                        <li><button type="button"><i class="fa-solid fa-cart-shopping"></i></button></li> <!--https://fontawesome.com/icons/cart-shopping?f=classic&s=solid--></li>
+                        <li><button type="button"><i class="fa-regular fa-user"></i></button></li> <!--https://fontawesome.com/icons/user?f=classic&s=regular--></li>
                     </ul>
                     <span id="searchbar">
                     <button type="button" onclick="openCloseS()">X</button>
-                    <input type="search" id="searchtextfield" name="searchinput" placeholder="Search...">
                     <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="searchtextfield" name="searchinput" placeholder="Search...">
                     </span>
-
                     <ul id="topnavcat">
                         <li><a href="katalog.html">Men</a></li>
                         <li><a href="katalog.html">Women</a></li>
@@ -34,22 +39,29 @@
                     </ul>
                 </nav>
             </header>
-            <main id="main">
+            <main id="main" class="maincat">
                 <section id="category">
-                    <h2>Catalog</h2>
-                    <select name="Category" class="cat_fil">
+                    <h2>Category</h2>
+                    <select name="Category" class="cat_fil" id="pickcategory">
                         <option>Category</option>
                         <option>Men</option>
                         <option>Women</option>
                         <option>Kids</option>
                     </select>
-                    <select name="filter" class="cat_fil">
+                    <ul id="desktopcat">
+                        <li><h3>Categories:</h3></li>
+                        <li>All shoes</li>
+                        <li>Shoe</li>
+                        <li>Sandal</li>
+                        <li>Boots</li>
+                    </ul>
+                    <select name="filter" class="cat_fil" class="filtsort">
                         <option>Filter</option>
                         <option>Type</option>
                         <option>Size</option>
                         <option>Colour</option>
                     </select>
-                    <select id="sort">
+                    <select id="sort" class="filtsort">
                         <option>Sort after: New</option>
                         <option>Sort after: Most popular</option>
                         <option>Sort after: Price: high-low</option>

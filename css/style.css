@@ -11,7 +11,6 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer";
-    row-gap: 2rem;
 }
 #header{
     grid-area: header;
@@ -23,6 +22,9 @@ body{
     grid-area: footer;
 }
 #desktopart1{
+    display: none;
+}
+.desktopnav{
     display: none;
 }
 /*Flex*/
@@ -58,7 +60,7 @@ i{
     background-color: #d4d4d4;
     list-style: none;
     flex-direction: column;
-    font-size: 2.3rem;
+    font-size: 2;
 }
 
 /*Searchbar i mobilversjon*/
@@ -107,7 +109,6 @@ nav a{
 
 main{
     width: 100%;
-    justify-content: center;
 }
 .article{
     margin: 1rem auto;
@@ -283,12 +284,13 @@ main{
     font-size: 1.5rem;
     margin: 0.5rem auto;
 }
+#desktopcat{
+    display: none;
+}
 #category select option{
     background-color: white;
     color: black;
 }
-
-
 #catalogitems h2{
     display: none;
 }
@@ -401,14 +403,13 @@ main{
 }
 
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 580px){
     #grid-container{
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 10fr 1fr;
         grid-template-areas: "header header header" "main main main" "footer footer footer footer";
         grid-template-rows: auto auto auto;
-        row-gap: 2rem;
         justify-items: center;
         
     }
@@ -429,10 +430,6 @@ main{
         display: none;
         overflow: hidden;
     }
-    #topnavcat{
-        display: flex;
-        overflow: hidden;
-    }
     #searchbar{
         display: flex;
         overflow: hidden;
@@ -443,38 +440,53 @@ main{
     }
     header{
         display: flex;
+        flex-wrap: nowrap;
         width: 100%;
         align-content: baseline;
     }
     header nav{
         width: 100%;
-        flex-wrap: wrap;
         justify-content: space-between;
-        align-content: baseline;
+        align-items: baseline;
     }
     header nav ul{
-        width: 48%;
+        order: 0;
+        display: flex;
+        width: 20%;
+        margin: 0 1rem 0 0;
     }
-    .rightnav{
+    header nav ul img{
+        width: 100%;
+    }
+    .desktopnav{
+        display: flex;
         order: 3;
+        width: 20%;
+        justify-content: space-around;
     }
-    #logo{
-        order: 1;
+    .desktopnav button{
+        padding: 0;
+    }
+    .desktopnav i{
+        font-size: 1.7rem;
     }
     #searchbar{
-        position: relative;
-        align-self: center;
-        width: 48%;
-        height: 40%;
+        width: 25%;
+        height: 60%;
         order: 2;
     }
+    #searchbar input{
+        width: 100%;
+    }
     #topnavcat{
-        width: 60%;
-        order: 2;
+        display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        width: 20%;
+        order: 1;
+        margin: 0 1rem;
         background-color: #fefefe;
-        font-size: 1.6rem;
+        font-size: 1rem;
+        justify-content: space-between;
     }
     main{
         width: 100%;
@@ -514,4 +526,55 @@ main{
     #fbicon{
         max-width: 4rem;
     }
+
+    .maincat{
+        justify-content: flex-end;
+        margin: 0 0 4rem 0;
+    }
+    #category{
+        display: flex;
+        margin: 2rem auto auto auto;
+        width: 100%;
+        height: 10%;
+        flex-wrap: wrap;
+    }
+    #category h2{
+        display: flex;
+        align-self: flex-start;
+        margin: 0;
+        width: 100%;
+    }
+    #category select{
+        width: 30%;
+        height: 2.5rem;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+    #desktopcat{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 27%;
+    }
+    #category h3{
+        margin: 0;
+    }
+    #pickcategory{
+        display: none;
+    }
+    #catalogitems{
+        display: flex;
+        width: 80%;
+        height: auto;
+    }
+    #catalogitems article{
+        width: 30%;
+    }
+    #bottomnav{
+        width: 80%;
+        height: auto;
+    }
+
 }
