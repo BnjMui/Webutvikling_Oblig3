@@ -74,10 +74,11 @@ i{
     width: 15rem;
     height: 1.8rem;
     margin: auto 0.5rem;
+    border: 0px;
 }
 #searchbar i{
     display: inline-block;
-    font-size: 1.83rem;
+    font-size: 1rem;
     align-self: center;
     padding: 0.3rem;
 }
@@ -112,6 +113,7 @@ main{
     margin: 0;
     border-radius: 5px;
     justify-content: space-around;
+    background-color: rgba(198, 170, 129, 0.65);
 }
 .article img{
     width: 45%;
@@ -131,11 +133,6 @@ main{
 .article p{
     font-size: 1.5rem;
     margin: 0.7rem;
-}
-#article1{
-    border: 0;
-    background-color: #C6AA81;
-    border: 0px;
 }
 .productslider{
     display: flex;
@@ -169,6 +166,7 @@ main{
 .productslider img{
     display: inline-block;
     width: 100%;
+    height: auto;
 }
 .productslider h3{
     margin: 0;
@@ -176,10 +174,9 @@ main{
 .productslider p{
     margin: 1rem 0 0 0;
 }
-
-
-#article2{
-    border: 0.5px solid;
+#article2 img{
+    width: 100%;
+    height: auto;
 }
 /*
 .logo a{
