@@ -499,6 +499,12 @@ main{
         order: 0;
         width: 100%;
     }
+    #desktopart1 article{
+        justify-content: space-around;
+    }
+    #desktopart1 img{
+        width: 48%;
+    }
     .article{
         order: 0;
         width: 48%;
@@ -533,44 +539,67 @@ main{
     }
     #category{
         display: flex;
-        margin: 2rem auto auto auto;
+        margin: 2rem auto 1rem auto;
         width: 100%;
-        height: 10%;
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
     #category h2{
         display: flex;
-        align-self: flex-start;
+        align-self: center;
         margin: 0;
         width: 100%;
+        font-size: 3rem;
     }
     #category select{
-        width: 30%;
-        height: 2.5rem;
-        margin: 0;
-        font-size: 1.3rem;
+        height: 2.8rem;
+        margin: 0 1rem 0 0;
+        font-size: 2rem;
+        align-self: flex-end;
+        justify-self: center;
+    }
+    #filter{
+        width: 10%;
+    }
+    #sort{
+        width: 15%;
     }
     #desktopcat{
         display: flex;
         list-style: none;
         flex-direction: column;
+        align-self: flex-end;
         padding: 0;
         margin: 0;
-        width: 27%;
+        width: 21.5%;
     }
     #category h3{
         margin: 0;
+        font-size: 2rem;
+    }
+    #category li{
+        font-size: 2rem;
     }
     #pickcategory{
         display: none;
     }
     #catalogitems{
+        margin: 1rem 0 auto 0;
         display: flex;
         width: 80%;
         height: auto;
     }
     #catalogitems article{
         width: 30%;
+    }
+    #catalogitems h3{
+        font-size: 2rem;
+    }
+    #catalogitems p{
+        font-size: 2rem;
+    }
+    #catalogitems article i{
+        font-size: 2rem;
     }
     #bottomnav{
         width: 80%;
