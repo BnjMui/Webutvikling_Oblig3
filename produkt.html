@@ -35,17 +35,17 @@
                 </nav>
             </header>
             <main id="main">
-                <section>
-                    <img src="###" alt="product_showcase">
-                    <h2>product name</h2>
-                    <p>0.00kr</p>
-                    <p>Choose colour: </p>
+                <section id="product">
+                    <img src="https://placehold.co/900x800" alt="product_showcase">
+                    <h2>Product name</h2>
+                    <p id="price">0.00kr</p>
+                    <h3>Choice of colour: </h3>
                     <ul>
-                        <li><input type="color"></li>
-                        <li><input type="color"></li>
-                        <li><input type="color"></li>
-                        <li><input type="color"></li>
-                        <li><input type="color"></li>
+                        <li><input type="color" value="#ff0000"></li>
+                        <li><input type="color" value="#088014"></li>
+                        <li><input type="color" value="#162294"></li>
+                        <li><input type="color" value="#ffffff"></li>
+                        <li><input type="color" value="#000000"></li>
                     </ul>
                     <label for="size">Size: </label>
                     <select id="size">
@@ -57,38 +57,36 @@
                         <option>43</option>
                     </select>
                     <p>This is a product about paragraf, the product is and will be product, and therefore it is product. This is why our product will always be product, and nice product for product out in product.</p>
+                    <select id="prodet">
+                        <option value="Product details">
+                            Product details
+                        </option>
+                        <option>
+                            <a href="google.com">Country of origin</a>
+                            <a href="google.com">How do we make out products climate friendly</a>
+                            <a href="google.com">Pollution charts</a>
+                        </option>
+                    </select>
                     <button type="button">Add to cart</button>
                 </section>
-                <section>
+                <section class="productslider">
                     <h2>Similar products</h2>
+                    <i class="fa-solid fa-chevron-left"></i> <!--https://fontawesome.com/icons/chevron-left?f=classic&s=solid-->
                     <a href="produkt.html">
-                        <figure>
-                        <img src="###" alt="Product picture">
-                        <h3>Productname</h3>
-                        <p>Price</p>
-                        </figure>
+                        <article>
+                            <img src="https://placehold.co/450x700" alt="Product picture">
+                            <h3>Productname</h3>
+                            <p>Price</p>
+                        </article>
                     </a>
                     <a href="produkt.html">
-                        <figure>
-                        <img src="###" alt="Product picture">
-                        <h3>Productname</h3>
-                        <p>Price</p>
-                        </figure>
+                        <article>
+                            <img src="https://placehold.co/450x700" alt="Product picture">
+                            <h3>Productname</h3>
+                            <p>Price</p>
+                        </article>
                     </a>
-                    <a href="produkt.html">
-                        <figure>
-                        <img src="###" alt="Product picture">
-                        <h3>Productname</h3>
-                        <p>Price</p>
-                        </figure>
-                    </a>
-                    <a href="produkt.html">
-                        <figure>
-                        <img src="###" alt="Product picture">
-                        <h3>Productname</h3>
-                        <p>Price</p>
-                        </figure>
-                    </a>
+                    <i class="fa-solid fa-chevron-right"></i> <!--<i class="fa-solid fa-chevron-right"></i>-->
                 </section>
             </main>
             <footer id="footer">
@@ -108,11 +106,11 @@
 
                 </section>
             </footer>
-            <span id="copyright">
+            <div id="copyright">
                 <p>Copyright: Jonas A. Evensen 2023</p>
                 <p>Laget for webutvikling obligatorisk oppgave 3</p>
                 <p>22/10/2023</p>
-            </span>
+            </div>
         </div>
         <script>
             const topNavMenu = document.getElementById("topnavcat")
