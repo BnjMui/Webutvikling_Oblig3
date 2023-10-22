@@ -8,3 +8,4 @@ img/Logo.png er hentet fra min egen figma side fra obligatorisk oppgave 2 i webu
 img/instagram_icon.png er hentet fra:
 - https://commons.wikimedia.org/wiki/File:Instagram_icon.png
 
+Alle produkt og artikkelbilder er hentet via: https://placehold.co/

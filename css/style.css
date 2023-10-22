@@ -468,15 +468,16 @@ main{
     }
     .desktopnav i{
         font-size: 1.7rem;
-        padding: 0.3rem;
+        margin: 1rem;
     }
     #searchbar{
-        width: fit-content;
-        height: 60%;
         order: 2;
     }
     #searchbar input{
         width: 100%;
+    }
+    #searchbar button{
+        display: none;
     }
     #topnavcat{
         display: flex;
@@ -565,7 +566,7 @@ main{
         width: 10%;
     }
     #sort{
-        width: 15%;
+        width: 20%;
     }
     #desktopcat{
         display: flex;
@@ -631,22 +632,37 @@ main{
     #product h2{
         width: 60%;
         height: fit-content;
-        margin: 0;
+        margin: 0 auto 0.5rem 1rem;
     }
     #price{
         width: 60%;
+        margin: 0.5rem 1rem;
     }
     #product h3{
         width: 50%;
+        margin: 0.5rem 1rem;
     }
     #product ul{
         width: 100%;
+        margin: 0.5rem 1rem;
+        justify-content: space-around;
+    }
+    #product label{
+        margin: 0.5rem 1rem 0.5rem 1rem;
+    }
+    #product select{
+        margin: 0.5rem 1rem;
     }
     #product p{
-        width: 100%;
+        width: 80%;
+        font-size: 2rem;
+        margin: 0.5rem 1rem;
+    }
+    #prodet{
+        width: 95%;
     }
     #product button{
-        margin: 1;
+        margin: 1rem;
         width: 80%;
     }
 }
