@@ -4,8 +4,8 @@
 body{
     background-color: #fefefe;
     font-family: Arial, Helvetica, sans-serif;
-    /*Grid*/
 }
+/*Grid*/
 #grid-container{
     width: 100%;
     display: grid;
@@ -113,10 +113,10 @@ main{
 .article article{
     display: flex;
     flex-wrap: wrap;
-    padding: 0.8rem 0.3rem 0rem 0.3rem;
+    padding: 1rem 1rem 0rem 1rem;
     margin: 0;
     border-radius: 5px;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgba(198, 170, 129, 0.65);
 }
 .article img{
@@ -400,4 +400,78 @@ main{
 }
 
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px){
+    #grid-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-areas: "header header header" "main main main" "footer footer footer footer";
+        grid-template-rows: auto auto auto;
+        row-gap: 2rem;
+        justify-items: center;
+        
+    }
+    #header{
+        grid-area: header;
+        grid-column-start: 2;
+    }
+    #main{
+        grid-area: main;
+        grid-column-start: 2;
+    }
+    #footer{
+        grid-area: footer;
+        grid-column-start: 2;
+    }
+    .navmobile{
+        display: none;
+        overflow: hidden;
+    }
+    #topnavcat{
+        display: flex;
+        overflow: hidden;
+    }
+    #searchbar{
+        display: flex;
+        overflow: hidden;
+    }
+    #copyright{
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        align-content: baseline;
+    }
+    header nav{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: baseline;
+    }
+    header nav ul{
+        width: 48%;
+    }
+    .rightnav{
+        order: 3;
+    }
+    #logo{
+        order: 1;
+    }
+    #searchbar{
+        position: relative;
+        align-self: center;
+        width: 48%;
+        height: 40%;
+        order: 2;
+    }
+    #topnavcat{
+        width: 60%;
+        order: 2;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #fefefe;
+        font-size: 1.6rem;
+    }
+}
