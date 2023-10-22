@@ -12,7 +12,6 @@ body{
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer";
     row-gap: 2rem;
-    
 }
 #header{
     grid-area: header;
@@ -22,6 +21,9 @@ body{
 }
 #footer{
     grid-area: footer;
+}
+#desktopart1{
+    display: none;
 }
 /*Flex*/
 header nav{
@@ -122,7 +124,6 @@ main{
 .article img{
     width: 45%;
     height: auto;
-    max-width: 500px;
 }
 .article a{
     width: 100%;
@@ -421,7 +422,8 @@ main{
     }
     #footer{
         grid-area: footer;
-        grid-column-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
     .navmobile{
         display: none;
@@ -473,5 +475,43 @@ main{
         justify-content: space-around;
         background-color: #fefefe;
         font-size: 1.6rem;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    #desktopart1{
+        display: flex;
+        order: 0;
+        width: 100%;
+    }
+    .article{
+        order: 0;
+        width: 48%;
+    }
+    .article h2{
+        font-size: 2rem;
+    }
+    .article p{
+        font-size: 1rem;
+    }
+    .productslider{
+        order: 1;
+        width: 100%;
+    }
+    .productslider img{
+        width: 70%;
+    }
+    #article2 img{
+        width: 100%;
+        height: auto;
+    }
+    #igicon{
+        max-width: 4rem;
+    }
+    #fbicon{
+        max-width: 4rem;
     }
 }
