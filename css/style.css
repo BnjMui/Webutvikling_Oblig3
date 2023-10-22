@@ -440,20 +440,19 @@ main{
     }
     header{
         display: flex;
-        flex-wrap: nowrap;
         width: 100%;
         align-content: baseline;
     }
     header nav{
         width: 100%;
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: baseline;
     }
     header nav ul{
         order: 0;
         display: flex;
-        width: 20%;
-        margin: 0 1rem 0 0;
+        width: fit-content;
     }
     header nav ul img{
         width: 100%;
@@ -461,7 +460,7 @@ main{
     .desktopnav{
         display: flex;
         order: 3;
-        width: 20%;
+        width: fit-content;
         justify-content: space-around;
     }
     .desktopnav button{
@@ -469,9 +468,10 @@ main{
     }
     .desktopnav i{
         font-size: 1.7rem;
+        padding: 0.3rem;
     }
     #searchbar{
-        width: 25%;
+        width: fit-content;
         height: 60%;
         order: 2;
     }
@@ -481,12 +481,15 @@ main{
     #topnavcat{
         display: flex;
         flex-direction: row;
-        width: 20%;
+        width: fit-content;
         order: 1;
         margin: 0 1rem;
         background-color: #fefefe;
-        font-size: 1rem;
+        font-size: 2rem;
         justify-content: space-between;
+    }
+    #topnavcat a{
+        margin: auto 0.3rem;
     }
     main{
         width: 100%;
@@ -590,6 +593,8 @@ main{
         height: auto;
     }
     #catalogitems article{
+        justify-content: center;
+        min-width: 220px;
         width: 30%;
     }
     #catalogitems h3{
@@ -606,4 +611,42 @@ main{
         height: auto;
     }
 
+    #product{
+        width: 100%;
+        display: flex;
+        border: 0.5px solid;
+        padding: 1rem;
+        justify-content: right;
+        align-content: flex-start;
+    }
+    #product article{
+        width: 50%;
+    }
+    #product img{
+        width: 47%;
+        align-self: flex-start;
+        justify-self: left;
+        margin: 0 1rem 0 0;
+    }
+    #product h2{
+        width: 60%;
+        height: fit-content;
+        margin: 0;
+    }
+    #price{
+        width: 60%;
+    }
+    #product h3{
+        width: 50%;
+    }
+    #product ul{
+        width: 100%;
+    }
+    #product p{
+        width: 100%;
+    }
+    #product button{
+        margin: 1;
+        width: 80%;
+    }
 }
