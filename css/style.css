@@ -116,8 +116,10 @@ main{
 .article img{
     width: 45%;
     height: auto;
+    max-width: 500px;
 }
 .article a{
+    width: 100%;
     color: black;
     text-decoration: none;
 }
@@ -141,32 +143,40 @@ main{
     border: 0.5px solid;
     border-radius: 5px;
     margin: 1rem auto;
-    justify-content: flex-start;
     flex-direction: row;
-}
-.productslider article{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.productslider h2{
-    display: block;
-    font-size: 2.5rem;
-}
-.productslider img{
-    display: inline-block;
-    width: 35%;
+    justify-content: space-between;
 }
 .productslider a{
+    display: flex;
+    width: 30%;
     color: black;
     text-decoration: none;
 }
+.productslider article{
+    display: inline-block;
+    width: 100%;
+}
+.productslider h2{
+    width: 100%;
+    margin: 1rem 1rem;
+    font-size: 2.5rem;
+}
+.productslider i{
+    margin: auto 0 auto 1rem; 
+    font-size: 2.5rem;
+    align-self: center;
+}
+.productslider img{
+    display: inline-block;
+    width: 100%;
+}
 .productslider h3{
-    display: inline-block
+    margin: 0;
 }
 .productslider p{
-    display: inline-block;
+    margin: 1rem 0 0 0;
 }
+
 
 #article2{
     border: 0.5px solid;
