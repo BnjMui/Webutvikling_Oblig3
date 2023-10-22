@@ -148,6 +148,7 @@ main{
     margin: 2rem auto;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 0.2rem 1rem 0.2rem;
 }
 .productslider a{
     display: flex;
@@ -312,21 +313,23 @@ main{
     margin: 1rem auto 1rem auto;
 }
 #catalogitems article a{
+    display: flex;
     color: black;
     text-decoration: none;
+    flex-wrap: wrap;
 }
 #catalogitems h3{
     margin: 0;
     font-size: 1rem;
+    width: 100%;
 }
 #catalogitems p{
-    margin: 0.5rem;
-    font-size: 1rem;
-    width: 40%;
+    margin: 0.5rem 0 0 0;
+    font-size: 0.8rem;
 }
 #catalogitems article i{
-    font-size: 1.7rem;
-    margin: auto;
+    font-size: 1rem;
+    margin: 0.3rem;
 }
 #bottomnav{
     display: flex;
@@ -463,6 +466,9 @@ main{
         width: fit-content;
         justify-content: space-around;
     }
+    .desktopnav li{
+        margin: 0 0.2rem;
+    }
     .desktopnav button{
         padding: 0;
     }
@@ -490,7 +496,7 @@ main{
         justify-content: space-between;
     }
     #topnavcat a{
-        margin: auto 0.3rem;
+        margin: auto 1.4rem;
     }
     main{
         width: 100%;
@@ -598,11 +604,15 @@ main{
         min-width: 220px;
         width: 30%;
     }
+    #catalogitems a{
+        justify-content: space-around;
+    }
     #catalogitems h3{
-        font-size: 2rem;
+        font-size: 1.7rem;
+        width: 100%;
     }
     #catalogitems p{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
     #catalogitems article i{
         font-size: 2rem;
